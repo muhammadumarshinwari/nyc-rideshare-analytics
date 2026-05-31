@@ -1,5 +1,3 @@
--- Most popular pickup-dropoff route for each hour of the day
--- Joins parquet data directly with NYC TLC zone lookup over HTTP
 WITH trips AS (
   SELECT *
   FROM 'data/*.parquet'

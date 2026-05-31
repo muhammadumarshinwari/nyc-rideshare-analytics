@@ -1,5 +1,3 @@
--- Total congestion surcharge collected by pickup borough in 2022
--- Joins trip data with NYC zone lookup to resolve borough names
 SELECT
   COALESCE(zone.Borough, 'Unknown') AS pickup_borough,
   SUM(t.congestion_surcharge) AS total_surcharge

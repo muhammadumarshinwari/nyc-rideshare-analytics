@@ -1,4 +1,3 @@
--- Monthly ride volume breakdown: Uber (HV0003) vs Lyft (HV0005)
 SELECT
   DATE_TRUNC('month', request_datetime)::DATE AS month,
   COUNT(*) FILTER (WHERE hvfhs_license_num = 'HV0003')::BIGINT AS uber,
